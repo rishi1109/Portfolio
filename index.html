@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rishi Chaturvedi — Backend Software Engineer</title>
+<meta name="description" content="Rishi Chaturvedi — Backend Software Engineer specializing in microservices, distributed systems, and AWS. Portfolio and resume.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grid-overlay" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">rishi<span class="logo-dot">.</span>chaturvedi</a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#work" data-route="/experience">/experience</a>
+      <a href="#projects" data-route="/projects">/projects</a>
+      <a href="#stack" data-route="/stack">/stack</a>
+      <a href="#contact" data-route="/contact" class="nav-cta">/contact</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="kicker">// backend software engineer</p>
+        <h1 class="hero-title">
+          I build systems that stay<br>
+          fast under production load.
+        </h1>
+        <p class="hero-sub">
+          2+ years designing and scaling microservices for enterprise SaaS
+          platforms with Java, Spring Boot, and AWS. Currently at
+          <strong>Infor</strong>, Hyderabad — previously Tech Mahindra and HPE.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">See the work</a>
+          <a href="assets/Rishi_Chaturvedi_Resume.pdf" class="btn btn-ghost" download>Download résumé ↓</a>
+        </div>
+        <div class="hero-links">
+          <a href="mailto:chaturvedirishi89@gmail.com">chaturvedirishi89@gmail.com</a>
+          <span class="dot-sep"></span>
+          <a href="tel:+916378458110">+91 63784 58110</a>
+        </div>
+      </div>
+
+      <div class="hero-diagram" aria-hidden="true">
+        <div class="diagram-label">image retrieval microservice — p95 latency</div>
+        <div class="latency-track">
+          <div class="latency-bar before">
+            <span class="latency-tag">before</span>
+            <span class="latency-val">22.0s</span>
+          </div>
+          <div class="latency-bar after">
+            <span class="latency-tag">after</span>
+            <span class="latency-val">7.0s</span>
+          </div>
+        </div>
+        <div class="diagram-note">DB BLOB storage → AWS S3 + async pipeline</div>
+
+        <div class="diagram-flow">
+          <div class="flow-node">client</div>
+          <div class="flow-arrow"></div>
+          <div class="flow-node">REST API</div>
+          <div class="flow-arrow"></div>
+          <div class="flow-node">SQS</div>
+          <div class="flow-arrow"></div>
+          <div class="flow-node">S3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-strip wrap">
+      <div class="stat"><span class="stat-num" data-count="68">0</span><span class="stat-unit">%</span><span class="stat-label">retrieval latency cut</span></div>
+      <div class="stat"><span class="stat-num" data-count="80">0</span><span class="stat-unit">%</span><span class="stat-label">pipeline time cut</span></div>
+      <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-unit">yrs+</span><span class="stat-label">production experience</span></div>
+      <div class="stat"><span class="stat-num" data-count="300">0</span><span class="stat-unit">+</span><span class="stat-label">DSA problems solved</span></div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCE ============ -->
+  <section class="section" id="work">
+    <div class="wrap">
+      <p class="route-label">/experience</p>
+      <h2 class="section-title">Where the systems got built.</h2>
+
+      <ol class="timeline">
+
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Mar 2025 — Present</span>
+            <span class="timeline-status">current</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Associate Software Engineer <span class="at">@ Infor</span></h3>
+            <p class="timeline-place">Hyderabad, India</p>
+            <ul>
+              <li>Rebuilt an image retrieval microservice on <strong>AWS S3</strong>, migrating off database BLOB storage and cutting average retrieval latency from 22s to 7s — a <strong>68% improvement</strong> — while easing DB I/O bottlenecks.</li>
+              <li>Engineered end-to-end async processing on <strong>AWS SQS</strong> with producer/consumer services to decouple image workflows and improve fault tolerance.</li>
+              <li>Designed a stateless, multi-language image-generation REST API for on-demand asset generation when objects were missing from S3.</li>
+              <li>Optimized a resource-intensive screenshot generation pipeline, cutting processing time by <strong>80%+</strong> and eliminating CPU/memory saturation under peak load.</li>
+              <li>Built a centralized auditing framework on <strong>Splunk</strong>, capturing CRUD operations across microservices for observability and faster production debugging.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">AWS S3</span><span class="tag">AWS SQS</span><span class="tag">Splunk</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Sept 2024 — Feb 2025</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Associate Software Engineer <span class="at">@ Tech Mahindra</span></h3>
+            <p class="timeline-place">Bengaluru, India</p>
+            <ul>
+              <li>Completed structured training in Java, Spring Boot, and microservices architecture aligned to enterprise development standards.</li>
+              <li>Shipped hands-on mini-projects covering REST APIs, authentication flows, and database integration.</li>
+              <li>Applied Git workflows and core system design principles as a foundation for production-level engineering.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span>
+            </div>
+          </div>
+        </li>
+
+        <li class="timeline-item">
+          <div class="timeline-meta">
+            <span class="timeline-date">Mar 2024 — Sept 2024</span>
+          </div>
+          <div class="timeline-body">
+            <h3>Software Engineer Intern <span class="at">@ Hewlett Packard Enterprise</span></h3>
+            <p class="timeline-place">Hyderabad, India</p>
+            <ul>
+              <li>Built a high-performance data processing script for a product dashboard, handling 1,000,000+ entries per sheet.</li>
+              <li>Cut CPU and memory usage by <strong>50%</strong>, improving performance under large data loads.</li>
+            </ul>
+            <div class="tag-row">
+              <span class="tag">Python</span><span class="tag">Data Processing</span>
+            </div>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section class="section section-alt" id="projects">
+    <div class="wrap">
+      <p class="route-label">/projects</p>
+      <h2 class="section-title">Things built outside the day job.</h2>
+
+      <div class="project-card">
+        <div class="project-head">
+          <h3>Expense Sharing Application</h3>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Spring Security</span><span class="tag">Google OAuth 2.0</span><span class="tag">MySQL</span>
+          </div>
+        </div>
+        <ul>
+          <li>Group expense-sharing app that cut manual calculation effort by <strong>90%</strong> through automated tracking and settlement.</li>
+          <li>Secured sessions end-to-end with <strong>JWT + Google OAuth 2.0</strong> authentication.</li>
+          <li>Applied the <strong>Strategy design pattern</strong> to support Equal, Exact, and Percentage split methods — keeping the splitting logic open for extension.</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/rishi1109" class="link-arrow" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+
+      <p class="project-note">More case studies in progress — check back, or ask for the walkthrough directly.</p>
+    </div>
+  </section>
+
+  <!-- ============ STACK / SKILLS ============ -->
+  <section class="section" id="stack">
+    <div class="wrap">
+      <p class="route-label">/stack</p>
+      <h2 class="section-title">What I build with.</h2>
+
+      <div class="stack-grid">
+        <div class="stack-group">
+          <h3>Languages</h3>
+          <div class="tag-row">
+            <span class="tag">Java</span><span class="tag">Python</span><span class="tag">C++</span><span class="tag">JavaScript</span><span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3>Frameworks &amp; Libraries</h3>
+          <div class="tag-row">
+            <span class="tag">Spring Boot</span><span class="tag">Java Collections</span><span class="tag">C++ STL</span><span class="tag">NumPy</span><span class="tag">Pandas</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3>Backend &amp; System Design</h3>
+          <div class="tag-row">
+            <span class="tag">Microservices</span><span class="tag">Distributed Systems</span><span class="tag">REST API Design</span><span class="tag">Async Processing</span><span class="tag">AWS S3</span><span class="tag">AWS SQS</span>
+          </div>
+        </div>
+        <div class="stack-group">
+          <h3>Data &amp; Tools</h3>
+          <div class="tag-row">
+            <span class="tag">MySQL</span><span class="tag">Git</span><span class="tag">GitLab</span><span class="tag">Postman</span><span class="tag">Jira</span><span class="tag">Splunk</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ACHIEVEMENTS ============ -->
+  <section class="section section-alt" id="achievements">
+    <div class="wrap">
+      <p class="route-label">/achievements</p>
+      <h2 class="section-title">Marks along the way.</h2>
+
+      <div class="achieve-grid">
+        <div class="achieve-card">
+          <span class="achieve-num">Star of the Month</span>
+          <p>Infor, March 2026 — recognized for consistently delivering high-quality work.</p>
+        </div>
+        <div class="achieve-card">
+          <span class="achieve-num">AIR 1692</span>
+          <p>CodeKaze, Coding Ninjas (2023) — also ranked Institute Rank 5.</p>
+        </div>
+        <div class="achieve-card">
+          <span class="achieve-num">300+ problems</span>
+          <p>Solved across LeetCode and GeeksforGeeks — data structures &amp; algorithms.</p>
+        </div>
+      </div>
+
+      <div class="education-line">
+        <p class="route-label">/education</p>
+        <h3>B.Tech, Computer Science &amp; Engineering</h3>
+        <p class="ed-detail">Jaipur Engineering College &amp; Research Centre · 2020–2024 · GPA 8.68/10.00</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="wrap">
+      <p class="route-label">/contact</p>
+      <h2 class="section-title">Let's talk about what you're building.</h2>
+      <p class="contact-sub">Open to backend and distributed-systems roles. Reach out directly — I read everything myself.</p>
+
+      <div class="contact-grid">
+        <a href="mailto:chaturvedirishi89@gmail.com" class="contact-card">
+          <span class="contact-label">email</span>
+          <span class="contact-value">chaturvedirishi89@gmail.com</span>
+        </a>
+        <a href="tel:+916378458110" class="contact-card">
+          <span class="contact-label">phone</span>
+          <span class="contact-value">+91 63784 58110</span>
+        </a>
+        <a href="https://www.linkedin.com/in/rishi-chaturvedi-68384a220/" class="contact-card" id="linkedinLink" target="_blank" rel="noopener">
+          <span class="contact-label">linkedin</span>
+          <span class="contact-value">/in/rishi-chaturvedi</span>
+        </a>
+        <a href="https://github.com/rishi1109" class="contact-card" id="githubLink" target="_blank" rel="noopener">
+          <span class="contact-label">github</span>
+          <span class="contact-value">/rishi1109</span>
+        </a>
+        <a href="https://leetcode.com/u/rccc1109/" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-label">leetcode</span>
+          <span class="contact-value">/u/rccc1109</span>
+        </a>
+        <a href="https://www.geeksforgeeks.org/user/rccc1109/" class="contact-card" target="_blank" rel="noopener">
+          <span class="contact-label">geeksforgeeks</span>
+          <span class="contact-value">/user/rccc1109</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <span>© <span id="year"></span> Rishi Chaturvedi</span>
+    <span class="footer-note">Built with HTML, CSS &amp; JS — deployed on GitHub Pages.</span>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
